@@ -1,6 +1,5 @@
 ﻿using PR44.Classes;
 using System;
-using System.Collections.Generic;
 using System.Text.RegularExpressions;
 using System.Windows;
 using Schema = System.ComponentModel.DataAnnotations.Schema;
@@ -119,7 +118,7 @@ namespace PR44.Models
                 return new RelayCommand(obj =>
                 {
                     IsEnabled = !IsEnabled;
-                    if (!IsEnabled) (MainWindow.init.DataContext as ViewModell.VM_Pages).vm_tasks.tasksContext.SaveChanges();
+                    if (!IsEnabled) (MainWindow.init.DataContext as ViewModels.VM_Pages).vm_tasks.tasksContext.SaveChanges();
                 });
             }
         }
@@ -132,9 +131,9 @@ namespace PR44.Models
                 {
                     if (MessageBox.Show("Вы уверены, что хотите удалить задачу?", "Предупреждение", MessageBoxButton.YesNo) == MessageBoxResult.Yes)
                     {
-                        (MainWindow.init.DataContext as ViewModell.VM_Pages).vm_tasks.Tasks.Remove(this);
-                        (MainWindow.init.DataContext as ViewModell.VM_Pages).vm_tasks.taskContext.Remove(this);
-                        (MainWindow.init.DataContext as ViewModell.VM_Pages).vm_tasks.taskContext.SaveChanges();
+                        (MainWindow.init.DataContext as ViewModels.VM_Pages).vm_tasks.Tasks.Remove(this);
+                        (MainWindow.init.DataContext as ViewModels.VM_Pages).vm_tasks.tasksContext.Remove(this);
+                        (MainWindow.init.DataContext as ViewModels.VM_Pages).vm_tasks.tasksContext.SaveChanges();
                     }
                 });
             }

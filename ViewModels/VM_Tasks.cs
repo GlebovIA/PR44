@@ -25,7 +25,7 @@ namespace PR44.ViewModels
                     Tasks.Add(NewTask);
                     tasksContext.Tasks.Add(NewTask);
                     tasksContext.SaveChanges();
-                })
+                });
             }
         }
     }

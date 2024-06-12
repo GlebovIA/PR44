@@ -7,7 +7,8 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="Images\" />
+    <None Remove="Images\ic-close.png" />
+    <None Remove="Images\ic-task.png" />
   </ItemGroup>
 
   <ItemGroup>
@@ -17,6 +18,11 @@
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
     </PackageReference>
     <PackageReference Include="Pomelo.EntityFrameworkCore.MySql" Version="5.0.4" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Images\ic-close.png" />
+    <Resource Include="Images\ic-task.png" />
   </ItemGroup>
 
 </Project>

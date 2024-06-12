@@ -5,7 +5,7 @@ namespace PR44.Classes.DataBase
 {
     public class Config
     {
-        public static readonly string connection = "server=;" +
+        public static readonly string connection = "server=127.0.0.1;" +
             "uid=root;" +
             "pwd=;" +
             "database=TaskManager;";
