@@ -12,7 +12,7 @@ namespace PR44
         {
             InitializeComponent();
             init = this;
-            DataContext = new VM_Pages
+            DataContext = new VM_Pages();
         }
     }
 }
