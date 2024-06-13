@@ -19,7 +19,7 @@ namespace PR44.Classes
         }
         public bool CanExecute(object parameter)
         {
-            return canExecute != null && canExecute(parameter);
+            return canExecute == null || canExecute(parameter);
         }
         public void Execute(object parameter) => execute(parameter);
     }

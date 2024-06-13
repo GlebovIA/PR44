@@ -30,7 +30,7 @@
                 <DropShadowEffect Opacity="0.1"/>
             </Grid.Effect>
             <Image Width="30" Height="30" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="10" Source="/Images/ic-task.png"/>
-            <Label Content="Задачник" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" FontSize="18"/>
+            <Label Content="Задачник" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Margin="100, 0" FontSize="18"/>
             <Button Command="{Binding OnClose}" Width="20" Height="20" VerticalAlignment="Top" HorizontalAlignment="Right" Margin="10">
                 <Button.Effect>
                     <DropShadowEffect Opacity="0.5" BlurRadius="3" ShadowDepth="3"/>
