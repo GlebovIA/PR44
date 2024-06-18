@@ -15,7 +15,7 @@ namespace PR44.Models
             get { return name; }
             set
             {
-                Match match = Regex.Match(value, "^.{1,50}&");
+                Match match = Regex.Match(value, ".{1,50}");
                 if (!match.Success) MessageBox.Show("Наименование не должно быть пустым, и не более 50 символов.", "Некорректный ввод значенияю");
                 else
                 {
@@ -30,7 +30,7 @@ namespace PR44.Models
             get { return priority; }
             set
             {
-                Match match = Regex.Match(value, "^.{1,30}&");
+                Match match = Regex.Match(value, ".{1,30}");
                 if (!match.Success) MessageBox.Show("Приоритет не должен быть пустым, и не более 30 символов.", "Некорректный ввод значенияю");
                 else
                 {
@@ -59,7 +59,7 @@ namespace PR44.Models
             get { return comment; }
             set
             {
-                Match match = Regex.Match(value, "^.{1,1000}&");
+                Match match = Regex.Match(value, ".{1,1000}");
                 if (!match.Success) MessageBox.Show("Приоритет не должен быть пустым, и не более 1000 символов.", "Некорректный ввод значенияю");
                 else
                 {
